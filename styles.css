@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --bs-text-primary: #02d7f2;
+    --bs-text-secondary: #f2e900;
+    --bs-text-tertiary: #007aff;
+    --bs-text-quaternary: #ff1111;
+    --bs-text-quinary: #000000;
+    --bs--text-six: #24282E;
+    --bs--text-seven: #33FF66;
+}
+
+/* HTML */
+
+
+html{
+    background-color: #203225;
+    background-color: var(--bs--text-six);
+}
+
+body{
+    width: 100%;
+    background-color: var(--bs--text-six);
+    height: 100%;
+    color: var(--bs-text-primary);
+    font-family: 'Roboto-mono', monospace;
+
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    padding: 5rem 5rem;
+}
+
+nav{
+    background-color: var(--bs-text-secondary);    
+}
+
+strong{
+    color: var(--bs-text-secondary);
+}
+
+.tecnologias{
+    font-weight: 600;
+    font-size: 1.5rem;
+    justify-content: center;
+    text-align: center;
+}
+
+p{
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+#titulo__tecnologias{
+    color: var(--bs-text-secondary);
+    font-weight: 600;
+}
+
+#titulo__experiencia{
+    color: var(--bs-text-secondary);
+    font-weight: 600;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#titulo__proyecto{
+    color: var(--bs-text-secondary);
+    font-weight: 600;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#parrafo__alerta{
+    font-size: .7rem;
+    color: var(--bs-text-quaternary);
+}
+
+.form-label{
+    color: var(--bs-text-primary);
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;    
+}
+
+h1{
+    color: var(--bs-text-tertiary);
+    font-weight: 600;
+    font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--bs--text-seven);
+}
+
+h2{
+    color: var(--bs-text-tertiary);
+    font-weight: 600;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--bs--text-seven);
+}
+
+small{
+    color: var(--bs-text-quaternary);
+    font-weight: 300;
+    font-size: 0.8rem;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 3rem;
+}
+
+#btn__enviar{
+    width: 100%;
+    background-color: var(--bs-text-secondary);
+    color: var(--bs-text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#small__line{
+    color: var(--bs--text-seven);
+}
+
+/* ----------- Fin de HTML --------- */
+
+/* Botones */
+.btn__section__1{
+    border-radius: 12px;
+    padding: .7rem 2rem;
+    width: 25%;
+    background-color: transparent;
+    color: var(--bs-text-secondary);
+    border-inline-color: var(--bs-text-secondary);
+    border: #f2e900 solid 2px;
+}
+
+.btn__section__1:hover{
+    background-color: var(--bs-text-secondary);
+    color: var(--bs--text-six);
+}
+
+.btn__section__2{
+    border-radius: 12px;
+    padding: .7rem 2rem;
+    width: 25%;
+    background-color: transparent;
+    color: var(--bs-text-secondary);
+    border-inline-color: var(--bs-text-secondary);
+    border: #f2e900 solid 2px;
+}
+
+.btn__section__2:hover{
+    background-color: var(--bs-text-secondary);
+    color: var(--bs--text-six);
+}
+
+.btn__link{
+    color: var(--bs-text-secondary);
+    background-color: var(--bs-text-primary);
+    display: grid;     
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 12px;
+    padding: .7rem 2rem;
+    width: 25%;
+    border: #f2e900 solid 2px;
+    
+}
+
+.btn__link:hover{
+    color: var(--bs-text-tertiary);
+}
+
+#link__github{
+    color: var(--bs-text-secondary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#link__github:hover{
+    color: var(--bs-text-tertiary);
+}
+
+#link__linkedin{
+    color: var(--bs-text-secondary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#link__linkedin:hover{
+    color: var(--bs-text-tertiary);
+}
+
+#btn__copy{
+    border-radius: 12px;
+    background-color: var(--bs-text-primary);
+}
+/* Fin de Botones */
+
+
+/* Contenedores */
+
+#seccion__profile{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+#seccion__tecnologias{
+    height: 5rem;
+    align-items: center;
+}
+
+#seccion__contacto{
+    padding-top: 300px;
+    height: 5rem;
+    align-items: center;
+    white-space: balance; 
+}
+
+#contacto{
+    color: var(--bs-text-secondary);
+    font-weight: 600;
+    justify-content: center;
+}
+
+#contenedor__form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#contenedor__form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#contacto__form{
+    text-align: center;
+}
+
+#display__projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Fin de Contenedores */
+
+/* Imagenes */
+
+img{
+    width: 72px;
+    height: auto;
+}
+
+/* Fin de Imagenes */
