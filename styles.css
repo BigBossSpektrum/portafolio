@@ -34,7 +34,30 @@ section{
 }
 
 nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
     background-color: var(--bs-text-secondary);    
+    border-radius: 40px;
+}
+
+#logo{
+    color: var(--bs-text-tertiary);
+    font-size: 2rem;
+}
+
+ul li {
+    display: inline-block;
+    padding:  0px 0px 0px 20px;
+}
+
+a{
+    color: var(--bs-text-tertiary);
+    text-decoration: none;
 }
 
 strong{
@@ -46,6 +69,7 @@ strong{
     font-size: 1.5rem;
     justify-content: center;
     text-align: center;
+
 }
 
 p{
@@ -158,7 +182,10 @@ small{
 .btn__link{
     color: var(--bs-text-secondary);
     background-color: var(--bs-text-primary);
-    display: grid;     
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+    gap: .5rem;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.2rem;
@@ -201,6 +228,12 @@ small{
 #btn__copy{
     border-radius: 12px;
     background-color: var(--bs-text-primary);
+    color: var(--bs-text-secondary);
+    border: #f2e900 solid 2px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.6;
 }
 /* Fin de Botones */
 
@@ -214,12 +247,38 @@ small{
 }
 
 #seccion__tecnologias{
-    height: 5rem;
-    align-items: center;
+
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+#seccion__tecnologias .tecnologias{
+    display: flex;
+    animation: scroll 40s linear infinite;
+    width: calc(200px * 16);
+}
+
+.tecnologias{
+    width: 200px;
+}
+
+.slider .slide img{
+    width: 100%;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        webkit-transform: translateX(calc(-200px * 11));
+        transform: translateX(calc(-200px * 11));
+    }
 }
 
 #seccion__contacto{
-    padding-top: 300px;
     height: 5rem;
     align-items: center;
     white-space: balance; 
@@ -259,4 +318,36 @@ img{
     height: auto;
 }
 
+#display__projects img{
+    width: 50%;
+    height: auto;
+    
+}
+
 /* Fin de Imagenes */
+
+
+#proyectos__tecnologias{
+    background-color: #33FF66;
+    border-radius: 6px;
+    color: #f2e900;
+    padding: 5px 10px;
+}
+
+#contacto__info{
+    padding: 2rem;
+}
+
+#contenedor__form{
+    padding: 2rem;
+}
+
+#footer{
+    padding: 30rem;
+    max-width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    
+}
+

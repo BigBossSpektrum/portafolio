@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>BigBossSpektrum</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link
@@ -16,31 +17,43 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.3/dist/sweetalert2.min.css" rel="stylesheet">
 
         <link rel="stylesheet" href="styles.css" />
+        
     </head>
 
     <body>
         <header>
             <!-- place navbar here -->
+            <!-- <nav class="navbar navbar-transparent">
+                   <div class="container">
+                       <a class="navbar-brand" href="index.html">Mi portafolio</a>
+                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                       </button>
+                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                       <div class="navbar-nav">
+                       <a class="nav-link" href="#">Experiencia</a>
+                       <a class="nav-link" href="#">Projectos</a>
+                       <a class="nav-link" href="#">Contactame</a>
+                       </div>
+                   </div>
+                   </div>
+               </nav> -->
+
+            <nav id="nav">
+                <h1 id="logo">Porfolio</h1>
+                <ul><a href="#seccion__profile">Mi portafolio</a></ul>
+                <ul><a href="#container__experiencia">Experiencia</a></ul>
+                <ul><a href="#container__proyectos">Projectos</a></ul>
+                <ul><a href="#seccion__contacto">Contactame</a></ul>
+            </nav>
         </header>
         <main class="">
-             <nav class="navbar navbar-transparent">
-                    <div class="container">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Mi portafolio</a>
-                        <img src="" id="logo__samuria" class="float-start" alt="">
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Features</a>
-                        <a class="nav-link" href="#">Pricing</a>
-                        </div>
-                    </div>
-                    </div>
-                </nav>
+
             <body>
                 <section id="seccion__profile">
                     <div class="row justify-content-md-center">
@@ -48,21 +61,22 @@
                         <h1>Silveker Hernandez</h1>
                         <h2>FullStack Jr</h2>
 
-                        <a href="https://www.linkedin.com/in/jonathan-hernandez-202a76218/" img="assets/linkedin.png" class="btn__link col-md-auto">Avalible for hire</a>
+                        <a href="https://www.linkedin.com/in/jonathan-hernandez-202a76218/" img="assets/linkedin.png" class="btn__link col-md-auto"><i class="fa-brands fa-linkedin"></i> Avalible for hire</a>
                         <p>Creo experiencias digitales cautivadoras mediante el desarrollo de <strong>Aplicaciones Web acessibles y de Alto Rendimiento</strong></p>
 
                         <div class="btn__container">
                             <a href="https://resume.io/r/nzhXWV3OD">    
-                            <button class="btn__section__1" download="CV" href="assets/CV.pdf">Descargar CV</button>
+                            <button class="btn__section__1" download="CV" href="assets/CV.pdf"><i class="fa-sharp fa-solid fa-eye"></i>  Visualizar CV</button>
                             </a>
-                            <button class="btn__section__2">Contactame</button>
+                            <a href="mailto:silvekerhernandez@proton.me">
+                            <button class="btn__section__2"><i class="fa-solid fa-address-book"></i> Contactame</button></a>
                         </div>
                     </div>
                 </section>
 
                 <section id="container__experiencia" class="container text-center">
                     <div>
-                        <h3 id="titulo__experiencia" class="display-4">Experiencia <small id="small__line">_____________________________________________________________________________________________________________</small></h3>
+                        <h3 id="titulo__experiencia" class="display-4">Experiencia<small id="small__line">_____________________________________________________________________________________________________________</small></h3>
                         <p>Soy un desarrollador apasionado y autodidacta con experiencia en el uso de tecnologías de frontend y backend. Tengo un sólido conocimiento en Python y Django para el desarrollo de aplicaciones web, así como en JavaScript para la creación de interfaces de usuario dinámicas. Además, he trabajado con MySQL para la gestión de bases de datos. Aunque aún no tengo experiencia laboral formal, he dedicado los últimos dos años a perfeccionar mis habilidades en estos ámbitos, participando en proyectos personales y cursos en línea que me han permitido adquirir una comprensión profunda y práctica de estas tecnologías.</p>                        
                     </div>
                 </section> 
@@ -72,29 +86,84 @@
                         <h3 id="titulo__proyecto"><small id="small__line">_____________________________________________________________________________________________________________</small> Proyectos</h3>
                     </div>
                     <div id="display__projects" class="row">
-                        proyecto 1
-                        proyecto 1
-                        proyecto 1
-                        proyecto 1
-                        proyecto 1
+                        <!-- proyecto 1 -->
+                         <div class="col-xs-1-4">
+                            <img src="assets/kid.png" alt="">
+                            <h2>Proyecto</h2>
+                            <div>
+                            <span id="proyectos__tecnologias">python</span>
+                            <span id="proyectos__tecnologias">JavaScript</span>
+                            <span id="proyectos__tecnologias">django</span>
+                            <span id="proyectos__tecnologias">MySQL</span>
+                            </div>
+                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                         </div>
+                        <!-- proyecto 1 -->
+                         <div class="col-xs-1-4">
+                            <img src="assets/kid.png" alt="">
+                            <h2>Proyecto</h2>
+                            <div>
+                            <span id="proyectos__tecnologias">python</span>
+                            <span id="proyectos__tecnologias">JavaScript</span>
+                            <span id="proyectos__tecnologias">django</span>
+                            <span id="proyectos__tecnologias">MySQL</span>
+                            </div>
+                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                         </div>
+                        <!-- proyecto 1 -->
+                         <div class="col-xs-1-4">
+                            <img src="assets/kid.png" alt="">
+                            <h2>Proyecto</h2>
+                            <div>
+                            <span id="proyectos__tecnologias">python</span>
+                            <span id="proyectos__tecnologias">JavaScript</span>
+                            <span id="proyectos__tecnologias">django</span>
+                            <span id="proyectos__tecnologias">MySQL</span>
+                            </div>
+                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                         </div>
+                        <!-- proyecto 1 -->
+                         <div class="col-xs-1-4">
+                            <img src="assets/kid.png" alt="">
+                            <h2>Proyecto</h2>
+                            <div>
+                            <span id="proyectos__tecnologias">python</span>
+                            <span id="proyectos__tecnologias">JavaScript</span>
+                            <span id="proyectos__tecnologias">django</span>
+                            <span id="proyectos__tecnologias">MySQL</span>
+                            </div>
+                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                         </div>
+
                     </div>
                 </section>
 
                 <section id="seccion__tecnologias">
                     <h3 id="titulo__tecnologias" class="display-4 text-center pb-4">Tecnologias que utilizo</h3>
                     <div class="tecnologias">                        
-                        <img src="assets/html-5.png" alt="HTML__logo" width="80"> HTML
-                        <img src="assets/css-3.png" alt="CSS__logo" width="80"> CSS
-                        <img src="assets/js.png" alt="JavaScript__logo" width="80"> JavaScript
-                        <img src="assets/bootstrap.png" alt="Bootstrap__logo" width="80"> Bootstrap
-                        <img src="assets/Python-logo.svg" alt="Python__logo" width="80"> Python
-                        <br>
-                        <img src="assets/python-django.webp" alt="django__python__logo" width="80"> Django
-                        <img src="assets/mysql.png" alt=" MySQL__logo" width="80"> MySQL
-                        <img src="assets/figma.png" alt="Figma__logo" width="80"> Figma
-                        <img src="assets/Trello-Logo.png" alt="Trello__logo" width="80"> Trello
-                        <img src="assets/githud.png" alt="github__logo" width="80"> GitHub
-                        <img src="assets/vercel.png" alt="PostgreSQL__logo" width="80"> Vercel
+                        <div class="slide"><img src="assets/html-5.png" alt="HTML__logo" width="80"> HTML</div> 
+                        <div class="slide"><img src="assets/css-3.png" alt="CSS__logo" width="80"> CSS</div>
+                        <div class="slide"><img src="assets/js.png" alt="JavaScript__logo" width="80"> JavaScript</div> 
+                        <div class="slide"><img src="assets/bootstrap.png" alt="Bootstrap__logo" width="80"> Bootstrap</div> 
+                        <div class="slide"><img src="assets/Python-logo.svg" alt="Python__logo" width="80"> Python</div> 
+                        <div class="slide"><img src="assets/django-python-logo.png" alt="django__python__logo" width="80"> Django</div> 
+                        <div class="slide"><img src="assets/mysql.png" alt=" MySQL__logo" width="80"> MySQL</div> 
+                        <div class="slide"><img src="assets/figma.png" alt="Figma__logo" width="80"> Figma</div> 
+                        <div class="slide"><img src="assets/Trello-Logo.png" alt="Trello__logo" width="80"> Trello</div> 
+                        <div class="slide"><img src="assets/githud.png" alt="github__logo" width="80"> GitHub</div> 
+                        <div class="slide"><img src="assets/Vercel_favicon.svg" alt="PostgreSQL__logo" width="80"> Vercel</div> 
+
+                        <div class="slide"><img src="assets/html-5.png" alt="HTML__logo" width="80"> HTML</div> 
+                        <div class="slide"><img src="assets/css-3.png" alt="CSS__logo" width="80"> CSS</div>
+                        <div class="slide"><img src="assets/js.png" alt="JavaScript__logo" width="80"> JavaScript</div> 
+                        <div class="slide"><img src="assets/bootstrap.png" alt="Bootstrap__logo" width="80"> Bootstrap</div> 
+                        <div class="slide"><img src="assets/Python-logo.svg" alt="Python__logo" width="80"> Python</div> 
+                        <div class="slide"><img src="assets/django-python-logo.png" alt="django__python__logo" width="80"> Django</div> 
+                        <div class="slide"><img src="assets/mysql.png" alt=" MySQL__logo" width="80"> MySQL</div> 
+                        <div class="slide"><img src="assets/figma.png" alt="Figma__logo" width="80"> Figma</div> 
+                        <div class="slide"><img src="assets/Trello-Logo.png" alt="Trello__logo" width="80"> Trello</div> 
+                        <div class="slide"><img src="assets/githud.png" alt="github__logo" width="80"> GitHub</div> 
+                        <div class="slide"><img src="assets/Vercel_favicon.svg" alt="PostgreSQL__logo" width="80"> Vercel</div> 
                     </div>
                 </section>
 
@@ -111,31 +180,32 @@
 
                             Gracias por visitar mi portafolio!
                             </p>
-                            <button id="btn__copy" img="assets/copy-svgrepo-com.svg" alt="copy">Silvekerhernandez@proton.me</button>
+                            <button id="btn__copy" alt="copy">Silvekerhernandez@proton.me <i class="fa-regular fa-copy"></i></button>
+                             
+                            
                         </div>
-                        <form id="contacto__form">
+                        <form id="contacto__form" action="https://formspree.io/f/mdknaawo" method="POST">
                             <p id="parrafo__alerta">*Si lo prefieres también puedes rellenar el siguiente formulario y me pondré en contacto contigo lo antes posible.</p>
                             <div>
                               <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Joe">   
+                              <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Joe">   
                             </div>
                             <div class="mb-3">
                               <label for="exampleFormControlInput1" class="form-label">Dirrecion de correo</label>
-                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="X8sQg@example.com">
+                              <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="X8sQg@example.com">
                             </div>
                             <div class="mb-3">
                               <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
-                            <button id="btn__enviar" type="submit" class="btn btn-primary">Enviar</button>
+                            <button id="btn__enviar" type="submit" class="btn btn-primary" value="Enviar">Enviar</button>
                         </form>
                     </div>
                 </section>
             </body>
         </main>
-        <footer class="text-center container pb-4">
-            <!-- <p>Diseñado y creado por silveker hernandez.</p>
-            <p>todos los derechos resevador 2024</p> -->
+        <footer id="footer" class="text-center container pb-4">
+            <span></span>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script
@@ -149,5 +219,16 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+        
+        <script
+            src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.3/dist/sweetalert2.all.min.js"
+        ></script>
+
+        <script
+            src="scripts.js"
+        ></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/sweetAlert.js"></script>
     </body>
 </html>
